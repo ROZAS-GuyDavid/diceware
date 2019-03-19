@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>passphrase</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="container">
+  
+  <h1 class="text-center">passphrase</h1><hr>
+  <p id="pass" class="text-center">passphrase: </p>
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <form class="mb-5" class="col col-lg-4">
+        <div class="form-group">
+          <label for="InputName">Name</label>
+          <input type="text" class="form-control text-white bg-secondary" id="InputName" aria-describedby="nameHelp" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+          <label for="InputEmail">Email address</label>
+          <input type="email" class="form-control text-white bg-secondary" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="InputPrice">Price</label>
+          <input type="number" class="form-control text-white bg-secondary" id="InputPrice" aria-describedby="priceHelp" placeholder="Enter price">
+        </div>
+        <button type="submit" id="btn-submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <table class="table invisible">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Price</th>
+        <th scope="col">Tva</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="name"></td>
+        <td id="email"></td>
+        <td id="price"></td>
+        <td id="tva"></td>
+        <td id="total"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="http://unpkg.com/jquery"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>
